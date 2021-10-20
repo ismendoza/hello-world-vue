@@ -4,6 +4,8 @@
   <HolaMundo mensaje="Bienvenido a vuejs" autor="Ismael Mendoza"/>
   <Contador />
   <Methods />
+  <FormInput />
+  <Listas />
 </template>
 
 
@@ -12,11 +14,14 @@ import HelloWorld from './components/HelloWorld.vue'
 import HolaMundo from './components/HolaMundo.vue'
 import Contador from './components/Contador.vue'
 import Methods from './components/Methods.vue'
+import FormInput from './components/FormInput.vue'
+import Listas from './components/Listas.vue'
 
 export default {
   name: 'App',
   components: {
-    HelloWorld, HolaMundo, Contador, Methods
+    HelloWorld, HolaMundo, Contador, Methods,
+    FormInput, Listas
   }
 }
 </script>
