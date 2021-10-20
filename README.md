@@ -1,4 +1,5 @@
 # hello-world-vue
+This is my hello world app in vuejs, this app is for learning
 
 ## Project setup
 ```
