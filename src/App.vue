@@ -6,6 +6,7 @@
   <Methods />
   <FormInput />
   <Listas />
+  <Reactive />
 </template>
 
 
@@ -16,12 +17,13 @@ import Contador from './components/Contador.vue'
 import Methods from './components/Methods.vue'
 import FormInput from './components/FormInput.vue'
 import Listas from './components/Listas.vue'
+import Reactive from './components/Reactive.vue'
 
 export default {
   name: 'App',
   components: {
     HelloWorld, HolaMundo, Contador, Methods,
-    FormInput, Listas
+    FormInput, Listas, Reactive
   }
 }
 </script>
