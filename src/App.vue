@@ -7,6 +7,8 @@
   <FormInput />
   <Listas />
   <Reactive />
+  <ReactiveArray />
+  <ReactiveInput />
 </template>
 
 
@@ -18,12 +20,14 @@ import Methods from './components/Methods.vue'
 import FormInput from './components/FormInput.vue'
 import Listas from './components/Listas.vue'
 import Reactive from './components/Reactive.vue'
+import ReactiveArray from './components/ReactiveArray.vue'
+import ReactiveInput from './components/ReactiveInput.vue'
 
 export default {
   name: 'App',
   components: {
     HelloWorld, HolaMundo, Contador, Methods,
-    FormInput, Listas, Reactive
+    FormInput, Listas, Reactive, ReactiveArray, ReactiveInput
   }
 }
 </script>
