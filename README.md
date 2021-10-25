@@ -1,5 +1,5 @@
 # hello-world-vue
-This is my hello world app in vuejs, this app is for learning
+This is my hello world app in vuejs, this app is for learning, the app includes components,  Form input and check boxes with v-model, lists (arrays) with v-for, methods, click event on button, reactivity with computed method, reactivity with reactive and ref methods
 
 ## Project setup
 ```
