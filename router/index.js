@@ -19,12 +19,6 @@ const routes = [
             import('../src/components/ReactiveInput.vue')
     },
     {
-        path: '/reactivemethod',
-        name: 'ReactiveInput',
-        component: () =>
-            import('../src/components/ReactiveInput.vue')
-    },
-    {
         path: '/computedmethod',
         name: 'Computed',
         component: () =>
