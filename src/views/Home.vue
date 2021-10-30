@@ -5,7 +5,8 @@
     <p>All the content of this application is in
        different components and all components are rendered in a single page, 
        I'm going to try to implement all vue js features,
-       the features listed below are implemented in this application.</p>
+       the features listed below are implemented in this application.
+       This application is only for desktop browsers.</p>
     <ul>
       <li>Components</li>
       <li>Router</li>

@@ -1,6 +1,8 @@
 <template>
 <div id="index">
+  <div class="logocontainer">
   <img alt="Vue logo" class="logo" src="./assets/logo.png">
+  </div>
   <div id="mynavigationbar">
     <router-link to="/" class="link">Home</router-link>
     <router-link to="/refmethod" class="link">Ref method</router-link>
@@ -31,17 +33,45 @@ export default {
 <style scoped>
 
 #mynavigationbar{
-  font-size: 20px;
+  font-size: 1.5em;
   border: 2px;
   border-color: red;
   display: block;
   text-align: center;
 }
 .link{
-  margin-right: 15px;
+  /* border: 2px;
+  border-collapse: red;
+  border-style: dotted; */
+  
+  padding-top: 5px;
+  padding-bottom: 5px;
+  padding-left: 10px;
+  padding-right: 10px;
+
+  margin-right: 5px;
+  margin-left: 5px;
   text-decoration: none;
   color: #2192AF;
-
+ 
+}
+.link:hover{
+  background: rgb(41, 88, 150);
+  width: auto;
+  color: rgb(255, 255, 255);
+  
+  padding-top: 5px;
+  padding-bottom: 5px;
+  padding-left: 10px;
+  padding-right: 10px;
+  
+  margin-right: 5px;
+  margin-left: 5px;
+  border-radius: 4px;
+}
+.logocontainer{
+  border-radius: 4px;
+  background: #1a242e2c;
 }
 .logo{
   display: block;
