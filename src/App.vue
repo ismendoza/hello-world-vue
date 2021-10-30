@@ -1,44 +1,75 @@
 <template>
-  <img alt="Vue logo" src="./assets/logo.png">
-  <HelloWorld msg="Welcome to Your Vue.js App"/>
-  <HolaMundo mensaje="Bienvenido a vuejs" autor="Ismael Mendoza"/>
-  <Contador />
-  <Methods />
-  <FormInput />
-  <Listas />
-  <Reactive />
-  <ReactiveArray />
-  <ReactiveInput />
+<div id="index">
+  <img alt="Vue logo" class="logo" src="./assets/logo.png">
+  <div id="mynavigationbar">
+    <router-link to="/" class="link">Home</router-link>
+    <router-link to="/refmethod" class="link">Ref method</router-link>
+    <router-link to="/reactivemethod" class="link">Reactive method</router-link>
+    <router-link to="/computedmethod" class="link">Computed method</router-link>
+    <router-link to="/lists" class="link">v-for</router-link>
+    <router-link to="/references" class="link">References</router-link>
+  </div>
+  <Me id="me" />
+  
+  <router-view id="view" />
+</div>
+  
 </template>
 
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
-import HolaMundo from './components/HolaMundo.vue'
-import Contador from './components/Contador.vue'
-import Methods from './components/Methods.vue'
-import FormInput from './components/FormInput.vue'
-import Listas from './components/Listas.vue'
-import Reactive from './components/Reactive.vue'
-import ReactiveArray from './components/ReactiveArray.vue'
-import ReactiveInput from './components/ReactiveInput.vue'
-
+import Me from './components/Me.vue'
 export default {
   name: 'App',
   components: {
-    HelloWorld, HolaMundo, Contador, Methods,
-    FormInput, Listas, Reactive, ReactiveArray, ReactiveInput
+    Me
+    
   }
 }
 </script>
 
-<style>
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+<style scoped>
+
+#mynavigationbar{
+  font-size: 20px;
+  border: 2px;
+  border-color: red;
+  display: block;
   text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
 }
+.link{
+  margin-right: 15px;
+  text-decoration: none;
+  color: #2192AF;
+
+}
+.logo{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+#me{
+  position: absolute;
+  width: 18%;
+  border: 2px;
+  margin-top: 30px;
+  
+  padding-left: 20px;
+  margin-right: 20px;
+  background: #fdffa3;
+}
+
+ #view{
+  position: absolute;
+  border: 2px;
+  left: 20%;
+  right: 0;
+  margin-top: 30px;
+  margin-right: 20px;
+  padding-left: 20px;
+  border-radius: 5px;
+  min-height: 60%;
+  background: #fdffa3;
+
+} 
 </style>
